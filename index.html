@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/CSS/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">                                     
         <title>Document</title>
     </head>
     <body>
-        <!--Primera parte Sportit, barra de navegación y botón con-->
+    <!--Primera parte Sportit, barra de navegación y botón con-->
         <header class="contenedor">
-            <p class="logo"><img src="/Img/logo.svg" alt="LogoSportit" class="logo"></p><!--Imagen Sportit tiene también el texto sportit-->
+            <p class="logo"><img src="Img/logo.svg" alt="LogoSportit" class="logo"></p><!--Imagen Sportit tiene también el texto sportit-->
             <nav class="navegacion">
                 <ul type="none" class="contenedor">
                     <li class="separar"><a href="#Sports" class="negro">Sports</a></li>
@@ -20,66 +20,84 @@
                     <li class="separar"><a href="#Community" class="negro">Community</a></li>
                 </ul>
             </nav>
-            <p class="boton"><a href="#Contact">Contact</a></p>
+            <button class="boton">Contact</button>
         </header>
+    
         <main>
-            <!-- 1. Sección Imagen tenista (En blanco)-->
-            <section>
-                <img src="/Img/padel-intro.png" alt="Tenista"> <!--Imagen tenista-->
+        <!-- 1. Sección Imagen tenista (En blanco)-->
+            <section class="contenedor_main1">
+                <!--Imagen tenista-->
+                <article class="img_tennista">
+                <img src="Img/padel-intro.png" alt="Tenista"> 
+                </article>
+
+                <article class="contenido_principal">                                            
                 <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-                <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-                <p class="boton"><a href="#Contact">Contact</a></p>
+                <p>The final Open of the 2022 World Padel Tour season is underway, 
+                    don't miss out on any of the action!</p>
+                <button class="boton">Contact</button>
+                </article>
+
             </section>
             <!--2. Sección morado -->
             <section class="different">
                 <h2 class="what-dif">¿What's different between pros?</h2>
                 <p class="text-what-dif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
             </section>
+        
+            <section class="contenedor_main2">
             <!---3 Puntos 01, 02, 03--->
-            <section>
-                <span>01</span> <!--Para el 01-->
+
+                <!--Para el 01-->
                 <article>
-                    <h3>
-                    Track company-wide progress
-                    </h3>
-                    <p> Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                    <h4><span>01</span>Track company-wide progress</h4>
+                    <div class="main2">
+                        <p> Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                    </div>
                 </article>
-                <span>02</span> <!--Para el 02-->
+
+                <!--Para el 02-->
                 <article>
-                    <h3>
-                    Advance built-in reports
-                    </h3>
-                    <p> Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
-                </article>
-                <span> 03 </span> <!--Para el 03-->
+                    <h4><span class="dos">02</span>Advance built-in reports</h4>
+                    <div class="main2">
+                        <p> Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                </article >
+
+                <!--Para el 03-->
                 <article>
-                    <h3>
-                    Everything you need in one place
-                    </h3>
-                    <p> Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                    <h4><span>03</span>Everything you need in one place</h4>
+                    <div class="main2">
+                        <p> Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                    </div>
                 </article>
             </section>
-            <section>
-                <header>
-                    <h2> Best of the month</h2>
-                </header>
+
+            <h2 class="best"> Best of the month</h2>
+
+            <section class="contenedor_main3">
                 <article>
-                    <img src="/Img/avatar-sanyo.png" alt="Sanyo"> <!--Imagen redonda Sanyo-->
+                    <img src="Img/avatar-sanyo.png" alt="Sanyo"> <!--Imagen redonda Sanyo-->
                     <h3> Sanyo</h3>
                     <p> Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
                 </article>
+
                 <article>
-                    <img src="/Img/avatar.lebron.png" alt="Lebron"> <!--Imagen redonda Lebron-->
+                    <img src="Img/avatar.lebron.png" alt="Lebron"> <!--Imagen redonda Lebron-->
                     <h3> Lebron</h3>
                     <p> Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
                 </article>
+
                 <article>
-                    <img src="/Img/avatar-navarro.png" alt="Navarro"> <!--Imagen redonda Navarro-->
+                    <img src="Img/avatar-navarro.png" alt="Navarro"> <!--Imagen redonda Navarro-->
                     <h3> Navarro</h3>
                     <p> Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
                 </article>
-                <p class="boton"><a href="#More">More</a></p>
             </section>
+
+            <div class="boton-more">
+                <button class="boton">More</button>
+            </div>
+            
             <section class="getknow"> <!--Parte morada penúltima-->
                 <h2 class="get"> Get to know the best teams of the year</h2>
                 <p class="gofor"><a href="#Contact" class="boton-gofor">Go for it</a></p><!---ESTE DEBE TENER BACKGROUND BLANCO Y LETRA MORADA-->
@@ -87,7 +105,7 @@
         </main>
         <footer class="contenedor">
             <section>
-                <p class="logo"><img src="/Img/Group 5.png" alt="LogoSportit" class="logo"></p> <!--Imagen Sportit, el logo está completo con la palabra Sportit-->
+                <p class="logo"><img src="Img/Group 5.png" alt="LogoSportit" class="logo"></p> <!--Imagen Sportit, el logo está completo con la palabra Sportit-->
                 <ul type="none" class="redes">
                     <li><a href="https://es-es.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li><!--Facebook-->
                     <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube"></i></a></li><!--Icono youtube-->

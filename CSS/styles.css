@@ -5,31 +5,34 @@
     border: 0px;
 }
 /* Letra para toda la página*/
-body{
+body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 /*header estilo*/
 /*Layout del header*/
-header{
+header {
     height: 174px;
     padding: 65px 165px;
 }
 /*se puso a la etiqueta header para que  sus hijos nav ul li p queden con estas características*/
-.contenedor{
+.contenedor {
     display:flex;
     flex-wrap: wrap;/*Para que conserve el width de los elementos hijos*/
     justify-content: space-between; /*Para que en el main axis los elementos queden con espacio entre ellos*/
 }
-.logo{
+
+.logo {
     height: 25px;
     width: 107.68px;
 }
-p.logo{
+
+p.logo {
     padding-top: 15px;
     display: inline-block;
 }
+
 /*barra navegación*/
-nav.navegacion{
+nav.navegacion {
     color: black;
     display: inline-block;
     font-size: 13px;
@@ -39,19 +42,22 @@ nav.navegacion{
     gap: 28px;
     padding: 10px;
 }
-li.separar{
+
+li.separar {
     display: inline-block;
     padding-left: 18px;
     padding-right: 18px;
 }
-a:hover{
+
+a:hover {
     opacity: 0.5;
 }
-a.negro{
+a.negro {
     text-decoration: none;
     color: black;
 }
-.boton{
+
+.boton {
     width: 134px;
     height: 44px;
     border-radius: 50px;
@@ -59,17 +65,71 @@ a.negro{
     gap: 10px;
     background-color:#8B48BF;
     color: white;
-    box-shadow: ;
     font-weight: 500px;
     font-size: 13.18px;
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
+
+/*Main*/
+
+/*  Sección Imagen tenista */ 
+
+.contenedor_main1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95.93px;
+}
+
+.img_tennista {
+    height: 461.07px;
+    width: 540px;
+}
+
+.contenido_principal { 
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 461.07px;
+    justify-content: space-around;
+    width: 540px;
+}
+
+.contenido_principal > p {
+    font-size: 16.56px;
+    font-weight: 500;
+    line-height: 26.01px;
+    text-align: right;
+}
+
+h1 {
+    display: flex;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57.3px;
+    text-align: right;
+  }
+  
+span {
+    background-color:#8B48BF;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500px;
+    font-size: 14px;
+    gap: 10px;
+    height: 43px;
+    margin: 20px 20px 0px 0px;
+    padding: 10px 25px;
+    text-align: center;
+    width: 69px;
+}
+
 /*Section What's different*/
-section.different{
+section.different {
     background-color: rgba(139, 72, 191, 1);
     color: white;
     height: 168px;
@@ -77,21 +137,114 @@ section.different{
     display: flex;
     justify-content: space-around;
 }
-h2.what-dif{
+
+h2.what-dif {
     width: 393px;
     height: 96px;
     font-size: 25px;
     color: white;
 }
-.text-what-dif{
+
+.text-what-dif {
     font-weight: 500px;
     font-size: 16px;
     color: white;
     width: 450px;
     height: 88px;
 }
+
+/* Puntos 01, 02, 03*/
+
+.contenedor_main2 {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 428px;
+    justify-content: center;
+}
+
+h4 {
+    color: #323851;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.28px;
+}
+
+.contenedor_main2 > article {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.main2 > p {
+    color: #B3B2B7;
+    font-size: 16.3px;
+    font-weight: 500;
+    line-height: 25.52px;
+    margin: 15px 0 0 90px;
+    text-align: justify;
+    width: 470px;
+}
+
+/* sección best of the mont*/
+
+.best {
+    color: #242E53;
+    font-size: 39.21px;
+    font-weight: 700;
+    line-height: 61.41px;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.contenedor_main3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FAFAFA;
+    height: 219px;
+}
+
+.contenedor_main3 > article {
+    width: 445px;
+    padding: 0 10px;
+}
+
+.contenedor_main3 > article > img {
+    position: relative;
+    bottom: 20px;
+}
+
+.contenedor_main3 h3 {
+    color: #3F4868;
+    font-size: 16.07px;
+    line-height: 25.17px;
+    padding-bottom: 30px;
+}
+
+.contenedor_main3 p {
+    color: #B9B9C1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.06px;
+    padding-bottom: 30px;
+}
+
+/* boton more */
+
+.boton-more {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 100px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
 /*Section Get To know*/
-section.getknow{
+section.getknow {
     background-color: rgba(139, 72, 191, 1);
     color: white;
     height: 224px;
@@ -99,13 +252,15 @@ section.getknow{
     display: flex;
     justify-content: space-between;
 }
-h2.get{
+
+h2.get {
     width: 393px;
     height: 96px;
     font-size: 35px;
     font-weight: 500px;
 }
-.gofor{
+
+.gofor {
     width: 134px;
     height: 44px;
     border-radius: 50px;
@@ -117,23 +272,27 @@ h2.get{
     margin-top: 20px;
     margin-right: 50px;
 }
-.boton-gofor{
+
+.boton-gofor {
     color:#8B48BF;
 }
+
 /* Footer*/
-footer{
+footer {
     background-color: black;
     height: 210px;
     padding: 30px 165px;
 }
+
 /*logo sportit Se le aplicó el mismo estilo del logo inicio*/
 /*redes*/
-.alinear{
+.alinear {
     line-height: 36px;
     font-weight: 400px;
     font-size: 16px;
 }
-.redes{
+
+.redes {
     display: inline-block;
     display: flex;
     flex-wrap: wrap;/*Para que conserve el width de los elementos hijos*/
@@ -143,7 +302,8 @@ footer{
     padding: 0px 5px;
     margin-top: 70px;
 }
-.input-radius{
+
+.input-radius {
     border-radius: 50px;
     width: 201px;
     height: 44px;
@@ -153,14 +313,16 @@ footer{
     letter-spacing: 1px;
     margin-right: 10px;
 }
-.copyright{
+
+.copyright {
     color:rgba(140, 140, 148, 1);
     font-size: 12.5px;
     margin-top: 80px;
     font-weight: 500px;
     text-align: right;
 }
-.go{
+
+.go {
     width: 60px;
     height: 44px;
     border-radius: 80px;
@@ -168,7 +330,6 @@ footer{
     gap: 10px;
     background-color:#8B48BF;
     color: white;
-    box-shadow: ;
     font-weight: 500px;
     font-size: 13.18px;
     line-height: 21,26px;
@@ -176,6 +337,7 @@ footer{
 }
 
 /*reglas para mobile*/
-@media(max-width: 480px){
+@media(max-width: 480px) {
     /*reglas */
 }
+
