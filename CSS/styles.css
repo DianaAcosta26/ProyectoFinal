@@ -5,53 +5,52 @@
     border: 0px;
 }
 /* Letra para toda la página*/
-body{
+body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 /*header estilo*/
 /*Layout del header*/
-header{
-    height: 174px;
+header {
     padding: 65px 165px;
 }
 /*se puso a la etiqueta header para que  sus hijos nav ul li p queden con estas características*/
-.contenedor{
+.contenedor {
     display:flex;
     flex-wrap: wrap;/*Para que conserve el width de los elementos hijos*/
     justify-content: space-between; /*Para que en el main axis los elementos queden con espacio entre ellos*/
 }
-.logo{
-    height: 25px;
-    width: 107.68px;
+
+.logo {
+    display: flex;
+    align-content: center;
 }
-p.logo{
-    padding-top: 15px;
-    display: inline-block;
-}
+
 /*barra navegación*/
-nav.navegacion{
+nav.navegacion {
     color: black;
     display: inline-block;
     font-size: 13px;
-    font-weight: 700px;
+    font-weight: 500;
     height: 44px;
     width: 600px;
-    gap: 28px;
-    padding: 10px;
+    padding: 15px 10px;
 }
-li.separar{
+
+li.separar {
     display: inline-block;
     padding-left: 18px;
     padding-right: 18px;
 }
-a:hover{
+
+a:hover {
     opacity: 0.5;
 }
-a.negro{
+a.color-nav-bar {
     text-decoration: none;
     color: black;
 }
-.boton{
+
+.boton {
     width: 134px;
     height: 44px;
     border-radius: 50px;
@@ -59,39 +58,202 @@ a.negro{
     gap: 10px;
     background-color:#8B48BF;
     color: white;
-    box-shadow: ;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 13.18px;
     text-align: center;
 }
-a{
+
+.boton-ocultable {
+    width: 134px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 11px;
+    gap: 10px;
+    background-color:#8B48BF;
+    color: white;
+    font-weight: 500;
+    font-size: 13.18px;
+    text-align: center;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
+p.navegador-hide {
+    display: none;
+}
+
+/*Main*/
+
+/*  Sección Imagen tenista */
+
+.contenedor_main1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95.93px;
+}
+
+.img_tennista {
+    height: 461.07px;
+    width: 540px;
+}
+
+.contenido_principal {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 461.07px;
+    justify-content: space-around;
+    width: 540px;
+}
+
+.contenido_principal > p {
+    font-size: 16.56px;
+    font-weight: 500;
+    line-height: 26.01px;
+    text-align: right;
+}
+
+h1 {
+    display: flex;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57.3px;
+    text-align: right;
+}
+
+span {
+    background-color:#8B48BF;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 10px;
+    height: 43px;
+    margin: 20px 20px 0px 0px;
+    padding: 10px 25px;
+    text-align: center;
+    width: 69px;
+}
+
 /*Section What's different*/
-section.different{
+section.different {
     background-color: rgba(139, 72, 191, 1);
     color: white;
     height: 168px;
-    padding: 50px 260px;
+    padding: 50px 180px;
     display: flex;
     justify-content: space-around;
 }
-h2.what-dif{
+
+h2.what-dif {
     width: 393px;
     height: 96px;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
 }
-.text-what-dif{
-    font-weight: 500px;
+
+.text-what-dif {
+    font-weight: 500;
     font-size: 16px;
     color: white;
     width: 450px;
     height: 88px;
 }
+
+/* Puntos 01, 02, 03*/
+
+.contenedor_main2 {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 428px;
+    justify-content: center;
+}
+
+h4 {
+    color: #323851;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.28px;
+}
+
+.contenedor_main2 > article {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.main2 > p {
+    color: #B3B2B7;
+    font-size: 16.3px;
+    font-weight: 500;
+    line-height: 25.52px;
+    margin: 15px 0 0 90px;
+    text-align: justify;
+    width: 470px;
+}
+
+/* sección best of the mont*/
+
+.best {
+    color: #242E53;
+    font-size: 39.21px;
+    font-weight: 700;
+    line-height: 61.41px;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.contenedor_main3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FAFAFA;
+    height: 219px;
+}
+
+.contenedor_main3 > article {
+    width: 445px;
+    padding: 0 10px;
+}
+
+.contenedor_main3 > article > img {
+    position: relative;
+    bottom: 20px;
+}
+
+.contenedor_main3 h3 {
+    color: #3F4868;
+    font-size: 16.07px;
+    line-height: 25.17px;
+    padding-bottom: 30px;
+}
+
+.contenedor_main3 p {
+    color: #B9B9C1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.06px;
+    padding-bottom: 30px;
+}
+
+/* boton more */
+
+.boton-more {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 100px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
 /*Section Get To know*/
-section.getknow{
+section.getknow {
     background-color: rgba(139, 72, 191, 1);
     color: white;
     height: 224px;
@@ -99,41 +261,50 @@ section.getknow{
     display: flex;
     justify-content: space-between;
 }
-h2.get{
+
+h2.get {
     width: 393px;
     height: 96px;
-    font-size: 35px;
-    font-weight: 500px;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 47.84px;
 }
-.gofor{
+.esconder-texto{
+    display: none;
+}
+.gofor {
     width: 134px;
     height: 44px;
     border-radius: 50px;
     padding: 12px;
     background-color: white;
-    font-weight: 700px;
+    font-weight: 600;
     font-size: 13.18px;
     text-align: center;
     margin-top: 20px;
     margin-right: 50px;
 }
-.boton-gofor{
-    color:#8B48BF;
+
+.boton-gofor {
+    color: rgba(139, 72, 191, 1);
 }
+
 /* Footer*/
-footer{
+footer {
     background-color: black;
     height: 210px;
     padding: 30px 165px;
 }
+
 /*logo sportit Se le aplicó el mismo estilo del logo inicio*/
 /*redes*/
-.alinear{
+.alinear {
     line-height: 36px;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
 }
-.redes{
+
+.redes {
     display: inline-block;
     display: flex;
     flex-wrap: wrap;/*Para que conserve el width de los elementos hijos*/
@@ -143,24 +314,27 @@ footer{
     padding: 0px 5px;
     margin-top: 70px;
 }
-.input-radius{
+
+.input-radius {
     border-radius: 50px;
     width: 201px;
     height: 44px;
     padding: 10px;
-    font-weight: 600px;
+    font-weight: 500;
     font-size: 13.18px;
     letter-spacing: 1px;
     margin-right: 10px;
 }
-.copyright{
+
+.copyright {
     color:rgba(140, 140, 148, 1);
     font-size: 12.5px;
     margin-top: 80px;
-    font-weight: 500px;
+    font-weight: 500;
     text-align: right;
 }
-.go{
+
+.go {
     width: 60px;
     height: 44px;
     border-radius: 80px;
@@ -168,14 +342,191 @@ footer{
     gap: 10px;
     background-color:#8B48BF;
     color: white;
-    box-shadow: ;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 13.18px;
     line-height: 21,26px;
     text-align: center;
 }
 
 /*reglas para mobile*/
-@media(max-width: 480px){
+@media (max-width: 480px) {
     /*reglas */
+    header {
+        padding: 50px 60px;
+    }
+    .boton-ocultable{
+        display: none;
+    }
+    .contenedor {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav.navegacion{
+        display: none;
+    }
+    p.navegador-hide{
+        display: inline;
+    }
+
+    /*//////////////////////
+
+    REVISAR INLINE DE ARRIBA
+
+    ///////////////////////*/
+
+    /*Imagen tenista*/
+    .contenedor_main1{
+        flex-direction: column;
+        align-content: center;
+        width: 480px;
+        height: 720px;
+    }
+    .img_tennista {
+        height: 360px;
+        width: 480px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .img-tamaño {
+        width: 420px;
+        margin-left: 30px;
+    }
+
+    /*Sección Live: Follow...*/
+    .contenido_principal {
+        height: 320px;
+        width: 440px;
+    }
+    h1 {
+        display: flex;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: right;
+    }
+    .media-text {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .boton-contact {
+        margin-top: 20px;
+    }
+
+    /*Sección: What's different...*/
+    section.different {
+        background-color: rgba(60, 221, 243, 1);
+        height: 306px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 150px;
+    }
+    .mobile-hide {
+        display: none;
+    }
+    h2.what-dif {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .text-what-dif {
+        width: 440px;
+        line-height: 24.18px;
+        }
+    /*Sección Números*/
+    .contenedor_main2 {
+        flex-direction: column;
+        height: 682px;
+        align-items: end;
+    }
+    h4{
+        font-size: 16px;
+        background-color: rgba(139, 72, 191, 0.3);
+        width: 446px;
+        height: 39px;
+        padding: 7px 0px 0px;
+        position: absolute;
+        align-content: center;
+        border-radius: 50px 0px 0px 50px ;
+    }
+    .contenedor_main2 > article{
+        width: 446px;
+        height: 214px;
+        position: relative;
+        padding-top:30px;
+    }
+    .main2 > p {
+        color: #B3B2B7;
+        padding: 70px 10px;
+        text-align: left;
+        margin: auto;
+        width: 428px;
+        height: 150px;
+    }
+    /*sección tarjeta*/
+
+    article.hide-tarjeta{
+        display: none;
+    }
+    .best {
+        padding-top: 50px;
+    }
+    .boton-more {
+        padding: 50px 0 70px;
+    }
+
+    /*Section Get Know*/
+    section.getknow {
+        background-color: rgba(60, 221, 243, 1);
+        height: 366px;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 50px;
+    }
+    h2.get {
+        width: 324px;
+        height: 192px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47.84px;
+        letter-spacing: -0.5%;
+        text-align: center;
+    }
+    .esconder-texto{
+        display: inline;
+    }
+    .gofor {
+        background-color:rgba(35, 44, 80, 1);
+        font-weight: 500;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .boton-gofor {
+        color: white;
+    }
+/*Footer*/
+footer {
+    height: 535.71px;
+    padding: 30px 165px;
+    flex-direction: column;
+    align-content: center;
 }
+
+.input-radius {
+    width: 308px;
+    padding: 10px;
+    font-size: 13.18px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+    .c1 {
+        order: 1;
+    }
+    .c2 {
+        order: 2;
+    }
+
+
+}
+
