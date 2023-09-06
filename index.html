@@ -10,35 +10,39 @@
     <body>
     <!--Primera parte Sportit, barra de navegación y botón con-->
         <header class="contenedor">
-            <p class="logo"><img src="Img/logo.svg" alt="LogoSportit" class="logo"></p><!--Imagen Sportit tiene también el texto sportit-->
+            <p class="logo"><img src="Img/logo.svg" alt="LogoSportit" class="c1"></p><!--Imagen Sportit tiene también el texto sportit-->
+            <p class="navegador-hide c2"><img src="/Img/Vector.png" alt="Navegador"></p>
             <nav class="navegacion">
-                <ul type="none" class="contenedor">
-                    <li class="separar"><a href="#Sports" class="negro">Sports</a></li>
-                    <li class="separar"><a href="#Productos" class="negro">Products</a></li>
-                    <li class="separar"><a href="#Aboutus" class="negro">About Us</a></li>
-                    <li class="separar"><a href="#Trainning" class="negro">Trainning</a></li>
-                    <li class="separar"><a href="#Community" class="negro">Community</a></li>
+                <ul type="none">
+                    <li class="separar"><a href="#Sports" class="color-nav-bar">Sports</a></li>
+                    <li class="separar"><a href="#Productos" class="color-nav-bar">Products</a></li>
+                    <li class="separar"><a href="#Aboutus" class="color-nav-bar">About Us</a></li>
+                    <li class="separar"><a href="#Trainning" class="color-nav-bar">Trainning</a></li>
+                    <li class="separar"><a href="#Community" class="color-nav-bar">Community</a></li>
                 </ul>
             </nav>
-            <button type="submit" value="Contact" class="boton"><a href="#Contact">Contact</a></button>
+            <p>
+                <button type="submit" value="Contact" class="boton-ocultable" name="Contact"><a href="#Contact">Contact</a></button>
+            </p>
         </header>
         <main>
         <!-- 1. Sección Imagen tenista (En blanco)-->
             <section class="contenedor_main1">
                 <!--Imagen tenista-->
                 <article class="img_tennista">
-                    <img src="Img/padel-intro.png" alt="Tenista"> 
+                    <img src="Img/padel-intro.png" alt="Tenista" class="img-tamaño"> 
                 </article>
                 <article class="contenido_principal">
                     <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-                    <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-                    <button type="submit" value="Contact" class="boton"><a href="#Contact">Contact</a></button>
+                    <p class="media-text">The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
+                    <button type="submit" value="Contact" class="boton boton-contact" name="Contact"><a href="#Contact">Contact</a></button>
                 </article>
             </section>
             <!--2. Sección morado -->
             <section class="different">
                 <h2 class="what-dif">What's different between pros?</h2>
-                <p class="text-what-dif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
+                <p class="text-what-dif mobile-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
+                <p class="text-what-dif navegador-hide">Manage provides all the functionality your <br> teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
             </section>
             <section class="contenedor_main2">
             <!---3 Puntos 01, 02, 03--->
@@ -65,7 +69,7 @@
             </section>
             <h2 class="best"> Best of the month</h2>
             <section class="contenedor_main3">
-                <article>
+                <article class="hide-tarjeta">
                     <img src="Img/avatar-sanyo.png" alt="Sanyo"> <!--Imagen redonda Sanyo-->
                     <h3> Sanyo</h3>
                     <p> Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
@@ -75,17 +79,18 @@
                     <h3> Lebron</h3>
                     <p> Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
                 </article>
-                <article>
+                <article class="hide-tarjeta">
                     <img src="Img/avatar-navarro.png" alt="Navarro"> <!--Imagen redonda Navarro-->
                     <h3> Navarro</h3>
                     <p> Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
                 </article>
             </section>
             <div class="boton-more">
-                <button type="submit" value="More" class="boton"><a href="#More">More</a></button>
+                <button type="submit" value="More" class="boton" name="More"><a href="#More">More</a></button>
             </div>
             <section class="getknow"> <!--Parte morada penúltima-->
-                <h2 class="get"> Get to know the best teams of the year</h2>
+                <h2 class="get mobile-hide"> Get to know the best teams of the year</h2>
+                <h2 class="get esconder-texto"> Get to know the <br> best <br> teams of the year</h2>
                 <p class="gofor"><a href="#GoForIt" class="boton-gofor">Go for it</a></p><!---ESTE DEBE TENER BACKGROUND BLANCO Y LETRA MORADA-->
             </section>
         </main>
@@ -125,7 +130,7 @@
                         <label for="Update">
                             <input type="text" id="Update" name="actualización" placeholder="Update in your inbox..." class="input-radius">
                         </label>
-                        <button type="submit" value="Go" class="go"><a href="#Go">Go</a></button>
+                        <button type="submit" value="Go" class="go" name="Go"><a href="#Go">Go</a></button>
                     </p>
                 </form>
                 <p class="copyright"> Copyright 2020. All Rigths Reserved</p>

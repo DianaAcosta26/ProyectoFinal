@@ -11,7 +11,6 @@ body {
 /*header estilo*/
 /*Layout del header*/
 header {
-    height: 174px;
     padding: 65px 165px;
 }
 /*se puso a la etiqueta header para que  sus hijos nav ul li p queden con estas características*/
@@ -22,13 +21,8 @@ header {
 }
 
 .logo {
-    height: 25px;
-    width: 107.68px;
-}
-
-p.logo {
-    padding-top: 15px;
-    display: inline-block;
+    display: flex;
+    align-content: center;
 }
 
 /*barra navegación*/
@@ -36,11 +30,10 @@ nav.navegacion {
     color: black;
     display: inline-block;
     font-size: 13px;
-    font-weight: 700px;
+    font-weight: 500;
     height: 44px;
     width: 600px;
-    gap: 28px;
-    padding: 10px;
+    padding: 15px 10px;
 }
 
 li.separar {
@@ -52,7 +45,7 @@ li.separar {
 a:hover {
     opacity: 0.5;
 }
-a.negro {
+a.color-nav-bar {
     text-decoration: none;
     color: black;
 }
@@ -65,7 +58,20 @@ a.negro {
     gap: 10px;
     background-color:#8B48BF;
     color: white;
-    font-weight: 500px;
+    font-weight: 500;
+    font-size: 13.18px;
+    text-align: center;
+}
+
+.boton-ocultable {
+    width: 134px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 11px;
+    gap: 10px;
+    background-color:#8B48BF;
+    color: white;
+    font-weight: 500;
     font-size: 13.18px;
     text-align: center;
 }
@@ -73,6 +79,9 @@ a.negro {
 a {
     text-decoration: none;
     color: white;
+}
+p.navegador-hide {
+    display: none;
 }
 
 /*Main*/
@@ -112,13 +121,13 @@ h1 {
     font-weight: 700;
     line-height: 57.3px;
     text-align: right;
-  }
+}
 
 span {
     background-color:#8B48BF;
     border-radius: 30px;
     color: white;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 14px;
     gap: 10px;
     height: 43px;
@@ -146,7 +155,7 @@ h2.what-dif {
 }
 
 .text-what-dif {
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 16px;
     color: white;
     width: 450px;
@@ -256,17 +265,20 @@ section.getknow {
 h2.get {
     width: 393px;
     height: 96px;
-    font-size: 35px;
-    font-weight: 500px;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 47.84px;
 }
-
+.esconder-texto{
+    display: none;
+}
 .gofor {
     width: 134px;
     height: 44px;
     border-radius: 50px;
     padding: 12px;
     background-color: white;
-    font-weight: 700px;
+    font-weight: 600;
     font-size: 13.18px;
     text-align: center;
     margin-top: 20px;
@@ -274,7 +286,7 @@ h2.get {
 }
 
 .boton-gofor {
-    color:#8B48BF;
+    color: rgba(139, 72, 191, 1);
 }
 
 /* Footer*/
@@ -288,7 +300,7 @@ footer {
 /*redes*/
 .alinear {
     line-height: 36px;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -308,7 +320,7 @@ footer {
     width: 201px;
     height: 44px;
     padding: 10px;
-    font-weight: 600px;
+    font-weight: 500;
     font-size: 13.18px;
     letter-spacing: 1px;
     margin-right: 10px;
@@ -318,7 +330,7 @@ footer {
     color:rgba(140, 140, 148, 1);
     font-size: 12.5px;
     margin-top: 80px;
-    font-weight: 500px;
+    font-weight: 500;
     text-align: right;
 }
 
@@ -330,14 +342,191 @@ footer {
     gap: 10px;
     background-color:#8B48BF;
     color: white;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 13.18px;
     line-height: 21,26px;
     text-align: center;
 }
 
 /*reglas para mobile*/
-@media(max-width: 480px) {
+@media (max-width: 480px) {
     /*reglas */
+    header {
+        padding: 50px 60px;
+    }
+    .boton-ocultable{
+        display: none;
+    }
+    .contenedor {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav.navegacion{
+        display: none;
+    }
+    p.navegador-hide{
+        display: inline;
+    }
+
+    /*//////////////////////
+
+    REVISAR INLINE DE ARRIBA
+
+    ///////////////////////*/
+
+    /*Imagen tenista*/
+    .contenedor_main1{
+        flex-direction: column;
+        align-content: center;
+        width: 480px;
+        height: 720px;
+    }
+    .img_tennista {
+        height: 360px;
+        width: 480px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .img-tamaño {
+        width: 420px;
+        margin-left: 30px;
+    }
+
+    /*Sección Live: Follow...*/
+    .contenido_principal {
+        height: 320px;
+        width: 440px;
+    }
+    h1 {
+        display: flex;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: right;
+    }
+    .media-text {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .boton-contact {
+        margin-top: 20px;
+    }
+
+    /*Sección: What's different...*/
+    section.different {
+        background-color: rgba(60, 221, 243, 1);
+        height: 306px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 150px;
+    }
+    .mobile-hide {
+        display: none;
+    }
+    h2.what-dif {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .text-what-dif {
+        width: 440px;
+        line-height: 24.18px;
+        }
+    /*Sección Números*/
+    .contenedor_main2 {
+        flex-direction: column;
+        height: 682px;
+        align-items: end;
+    }
+    h4{
+        font-size: 16px;
+        background-color: rgba(139, 72, 191, 0.3);
+        width: 446px;
+        height: 39px;
+        padding: 7px 0px 0px;
+        position: absolute;
+        align-content: center;
+        border-radius: 50px 0px 0px 50px ;
+    }
+    .contenedor_main2 > article{
+        width: 446px;
+        height: 214px;
+        position: relative;
+        padding-top:30px;
+    }
+    .main2 > p {
+        color: #B3B2B7;
+        padding: 70px 10px;
+        text-align: left;
+        margin: auto;
+        width: 428px;
+        height: 150px;
+    }
+    /*sección tarjeta*/
+
+    article.hide-tarjeta{
+        display: none;
+    }
+    .best {
+        padding-top: 50px;
+    }
+    .boton-more {
+        padding: 50px 0 70px;
+    }
+
+    /*Section Get Know*/
+    section.getknow {
+        background-color: rgba(60, 221, 243, 1);
+        height: 366px;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 50px;
+    }
+    h2.get {
+        width: 324px;
+        height: 192px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47.84px;
+        letter-spacing: -0.5%;
+        text-align: center;
+    }
+    .esconder-texto{
+        display: inline;
+    }
+    .gofor {
+        background-color:rgba(35, 44, 80, 1);
+        font-weight: 500;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .boton-gofor {
+        color: white;
+    }
+/*Footer*/
+footer {
+    height: 535.71px;
+    padding: 30px 165px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.input-radius {
+    width: 308px;
+    padding: 10px;
+    font-size: 13.18px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+    .c1 {
+        order: 1;
+    }
+    .c2 {
+        order: 2;
+    }
+
+
 }
 
