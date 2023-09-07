@@ -294,6 +294,12 @@ footer {
     background-color: black;
     height: 210px;
     padding: 30px 165px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-mid {
+    display: flex;
 }
 
 /*logo sportit Se le aplicó el mismo estilo del logo inicio*/
@@ -324,6 +330,10 @@ footer {
     font-size: 13.18px;
     letter-spacing: 1px;
     margin-right: 10px;
+}
+
+.copyright-mquery {
+    display: none;
 }
 
 .copyright {
@@ -507,26 +517,64 @@ footer {
     }
 /*Footer*/
 footer {
-    height: 535.71px;
-    padding: 30px 165px;
+    height: 550px;
+    padding: 30px 0;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+}
+
+.copyright-mquery {
+    color:rgba(140, 140, 148, 1);
+    font-size: 12.5px;
+    font-weight: 500;
+    text-align: right;
+    display: flex;
+    margin-top: 30px;
+}
+
+.copyright{
+    display: none;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column-reverse;
+    order: 3;
+    width: 70vw;
+    align-items: center;
+}
+
+.footer-left > .logo {
+    margin: 20px 0;
+}
+
+.redes {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 0;
+}
+
+.footer-left a {
+    margin: 0 20px;
+}
+
+.footer-right {
+    order: 1;
 }
 
 .input-radius {
-    width: 308px;
+    width: 250px;
     padding: 10px;
     font-size: 13.18px;
     letter-spacing: 1px;
     margin-right: 10px;
 }
-    .c1 {
-        order: 1;
-    }
-    .c2 {
-        order: 2;
-    }
 
+form > div {
+    display: flex;
+}
 
+.footer-mid {
+    order: 2;}
 }
 
