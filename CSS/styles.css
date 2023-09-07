@@ -9,17 +9,14 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 /*header estilo*/
-/*Layout del header*/
 header {
     padding: 65px 165px;
 }
-/*se puso a la etiqueta header para que  sus hijos nav ul li p queden con estas características*/
 .contenedor {
     display:flex;
     flex-wrap: wrap;/*Para que conserve el width de los elementos hijos*/
     justify-content: space-between; /*Para que en el main axis los elementos queden con espacio entre ellos*/
 }
-
 .logo {
     display: flex;
     align-content: center;
@@ -45,6 +42,7 @@ li.separar {
 a:hover {
     opacity: 0.5;
 }
+
 a.color-nav-bar {
     text-decoration: none;
     color: black;
@@ -137,7 +135,7 @@ span {
     width: 69px;
 }
 
-/*Section What's different*/
+/*Section Morado What's different*/
 section.different {
     background-color: rgba(139, 72, 191, 1);
     color: white;
@@ -162,7 +160,7 @@ h2.what-dif {
     height: 88px;
 }
 
-/* Puntos 01, 02, 03*/
+/* Tarjetas Puntos 01, 02, 03*/
 
 .contenedor_main2 {
     align-items: center;
@@ -195,7 +193,7 @@ h4 {
     width: 470px;
 }
 
-/* sección best of the mont*/
+/* Sección tarjetas Sanyo, Lebron y Navarro*/
 
 .best {
     color: #242E53;
@@ -225,6 +223,9 @@ h4 {
     bottom: 20px;
 }
 
+.animacion-scale:hover{
+    transform: scale(2);
+}
 .contenedor_main3 h3 {
     color: #3F4868;
     font-size: 16.07px;
@@ -252,7 +253,7 @@ h4 {
     height: 100%;
 }
 
-/*Section Get To know*/
+/*Section Get To know the best*/
 section.getknow {
     background-color: rgba(139, 72, 191, 1);
     color: white;
@@ -297,6 +298,9 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+.footer-left{
+    margin-top: 10px;
+}
 
 .footer-mid {
     display: flex;
@@ -308,6 +312,7 @@ footer {
     line-height: 36px;
     font-weight: 400;
     font-size: 16px;
+    margin-right: 60px;
 }
 
 .redes {
@@ -357,6 +362,12 @@ footer {
     line-height: 21,26px;
     text-align: center;
 }
+.go:hover{
+    transform: rotate(20deg);
+}
+.logo:hover{
+    transform: rotate(20deg);
+}
 
 /*reglas para mobile*/
 @media (max-width: 480px) {
@@ -376,15 +387,14 @@ footer {
         display: none;
     }
     p.navegador-hide{
-        display: inline;
+        display: inline-block;
     }
-
-    /*//////////////////////
-
-    REVISAR INLINE DE ARRIBA
-
-    ///////////////////////*/
-
+    .c1{
+        order:1;
+    }
+    .c2{
+        order: 2;
+    }
     /*Imagen tenista*/
     .contenedor_main1{
         flex-direction: column;
@@ -444,7 +454,7 @@ footer {
         width: 440px;
         line-height: 24.18px;
         }
-    /*Sección Números*/
+    /*Sección Tarjetas 01, 02, 03*/
     .contenedor_main2 {
         flex-direction: column;
         height: 682px;
@@ -474,7 +484,7 @@ footer {
         width: 428px;
         height: 150px;
     }
-    /*sección tarjeta*/
+    /*Sección Tarjeta Lebron*/
 
     article.hide-tarjeta{
         display: none;
@@ -486,7 +496,7 @@ footer {
         padding: 50px 0 70px;
     }
 
-    /*Section Get Know*/
+    /*Section Get To Know The Best*/
     section.getknow {
         background-color: rgba(60, 221, 243, 1);
         height: 366px;
